@@ -1,0 +1,63 @@
+{
+  "name": "djkonkers-overlay",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build-old": "vue-cli-service build",
+    "build": " ./node_modules/.bin/parcel build src/graphics/*.html --out-dir graphics --public-url .",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.21",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-typescript": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.11.0",
+    "sass-loader": "^7.0.1",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "author": {
+    "name": "Erik Gilling",
+    "email": "konkers@konkers.net",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "panel",
+        "title": "Panel",
+        "width": 2,
+        "file": "panel.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "ff4fe.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "BSD-3-Clause"
+}
